@@ -1,0 +1,41 @@
+import { Playfair_Display } from 'next/font/google'
+import Layout from '../../components/Layout'
+import Link from 'next/link'
+
+const playfairFont = Playfair_Display({ subsets: ['latin'] })
+
+export default function Showcase() {
+  return (
+    <>
+      <Layout> 
+
+        <div className="topBand">
+          <p className={`midTitle ${playfairFont.className}`}>Showcase</p>
+        </div>
+
+        <div>
+          <Link className="navLink" href="/">{"<<<"} Home</Link>
+        </div>
+
+        <div className="contents">
+
+          <p className="smTitle">Classic Car $5500</p>
+          <img
+            src="/images/classic_car.jpg"
+            width="640" height="450"
+            alt="Classic Car $5500"
+          />
+
+          <p className="smTitle">Chaise $4560</p>
+          <img
+            src="/images/chaise.jpg"
+            width="640" height="450"
+            alt="Chaise $4560"
+          />
+
+        </div>
+
+      </Layout>   
+    </>
+  )
+}
