@@ -1,4 +1,5 @@
 import { Playfair_Display } from 'next/font/google'
+import Head from 'next/head'
 
 const playfairFont = Playfair_Display({ subsets: ['latin'] })
 
