@@ -20,7 +20,7 @@ export default function Home() {
 
         <div className="contents">
           <Image
-            src="/images/hero.jpg"
+            src="/projet-next/images/hero.jpg"
             fill
             cbjet-fit='contain'
             alt="BENCH & SOFA home page picture"
