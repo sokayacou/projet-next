@@ -1,5 +1,6 @@
 import { Playfair_Display } from 'next/font/google'
 import Layout from '../../components/Layout'
+import PageHead from '../../components/PageHead'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -8,6 +9,7 @@ const playfairFont = Playfair_Display({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
+      <PageHead title="Bench&Sofa" description="Bench and Sofa" />
       <Layout> 
 
         <div className="topBand">
